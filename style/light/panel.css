@@ -1,0 +1,48 @@
+/* Panel Container */
+
+.panel.light {
+    font-size: 12px;
+    color: var(--bluegrey-5);
+}
+
+/* Primary & Secondary Panels */
+
+.panel.light .primary, 
+.panel.light .secondary {
+    padding: 12px;
+    letter-spacing: .25px;
+}
+
+.panel.light .primary .label,
+.panel.light .secondary .label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.25rem;
+}
+
+.panel.light .primary .label:not(:first-of-type),
+.panel.light .secondary .label:not(:first-of-type) {
+    margin-top: 1rem;
+}
+
+/* Primary Panel */
+
+.panel.light .primary {
+    background: var(--bluegrey-10);
+    
+}
+
+.panel.light .primary .label {
+    color: var(--bluegrey-7);
+}
+
+/* Secondary Panel */
+
+.panel.light .secondary {
+    background: var(--bluegrey-8);
+}
+
+.panel.light .secondary .label {
+    color: var(--bluegrey-1);
+}

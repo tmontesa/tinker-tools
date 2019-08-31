@@ -1,0 +1,12 @@
+h2.light {
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 24px;
+    color: var(--bluegrey-1);
+    margin-bottom: 1rem;
+}
+
+.subtitle.light {
+    font-size: 16px;
+    color: var(--bluegrey-7);
+    margin-bottom: 0.333rem;
+}

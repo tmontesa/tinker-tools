@@ -1,0 +1,5 @@
+.divider.light {
+    width: 100%;
+    border-bottom: 2px solid var(--bluegrey-8);
+    margin-bottom: 3rem;
+}

@@ -75,16 +75,18 @@ class Head {
     }
 
     setAbilities(abilities) {
-        if (isNaN(abilities)) {
-            console.error(`Abilities is invalid.`);
-            return;
+        for (var i = 0; i < abilities.length; i++) {
+            if (!(abilities[i] instanceof Ability)) {
+                console.error(`Abilities is invalid.`);
+                return;
+            }
         }
-
+        
         this.abilities = abilities;
     }
 
 }
 
-function head(durability, modifier, abilities) {
-    return new Head(durability, modifier, abilities);
+function head(miningLevel, durability, speed, attack, abilities) {
+    return new Head(miningLevel, durability, speed, attack, abilities);
 }

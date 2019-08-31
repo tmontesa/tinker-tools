@@ -39,9 +39,11 @@ class Extra {
     }
 
     setAbilities(abilities) {
-        if (isNaN(abilities)) {
-            console.error(`Abilities is invalid.`);
-            return;
+        for (var i = 0; i < abilities.length; i++) {
+            if (!(abilities[i] instanceof Ability)) {
+                console.error(`Abilities is invalid.`);
+                return;
+            }
         }
 
         this.abilities = abilities;

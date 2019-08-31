@@ -1,0 +1,35 @@
+.tabs.light{
+    display: flex;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.tabs.light .tab {
+    flex: 1;
+    padding: 1rem;
+    background: var(--bluegrey-8);
+    color: var(--bluegrey-6);
+}
+
+.tabs.light .tab:not(:first-of-type) {
+    margin-left: 12px;
+}
+
+.tabs.light .tab.selected {
+    background: var(--bluegrey-10);
+    color: var(--bluegrey-1);
+}
+
+.tabs.light .tab .iconfont {
+    font-size: 12px;
+}
+
+.tabbed-content {
+    display: none;
+}
+
+.tabbed-content.selected {
+    display: block;
+}

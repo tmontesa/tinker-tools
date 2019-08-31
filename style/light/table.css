@@ -1,0 +1,69 @@
+/* Table Wrapper */
+.table-wrapper {
+    max-height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    background: var(--bluegrey-6);
+    width: 12px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background: var(--bluegrey-2);
+}
+
+
+
+
+/* Table */
+table.light {
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: .25px;
+    color: var(--bluegrey-5);
+    background: var(--bluegrey-10);
+}
+
+
+
+
+/*  Table Cells */
+table.light tr th, 
+table.light tr td {
+    padding: 1rem 24px;
+}
+
+
+
+
+/* Table Cell Primary */
+table.light tr td.primary {
+    color: var(--bluegrey-1);
+}
+
+
+
+
+/* Table Row Header */
+table.light tr:first-of-type {
+    background: var(--bluegrey-6);
+    color: var(--bluegrey-9);
+}
+
+table.light tr:first-of-type th {
+    background: var(--bluegrey-6);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+
+
+/* Table Row Selected */
+table.light tr.selected {
+    background: var(--bluegrey-8);
+    color: var(--bluegrey-1);
+}

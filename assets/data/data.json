@@ -1,0 +1,71 @@
+{
+    "Material": [
+        {
+            "id": "COPPER",
+            "name": "Copper",
+            "mods": "THERMAL\nPROJECTRED",
+            "addon": "PLUSTIC"
+        }
+    ],
+    "Mod": [
+        {
+            "id": "THERMAL",
+            "name": "Thermal Foundation",
+            "author": "CoFH Team",
+            "url": "https://teamcofh.com/"
+        },
+        {
+            "id": "PROJECTRED",
+            "name": "Project Red",
+            "author": "MrTJP",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/project-red-base"
+        }
+    ],
+    "Addon": [
+        {
+            "id": "PLUSTIC",
+            "name": "PlusTiC",
+            "author": "landmaster_phuong0429",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/plustic"
+        }
+    ],
+    "Head": [
+        {
+            "id": "COPPER",
+            "miningLevel": 12,
+            "durability": 12,
+            "speed": 12,
+            "attack": 12,
+            "abilities": "WELLESTABLISHED\nMAGNETIC"
+        }
+    ],
+    "Handle": [
+        {
+            "id": "COPPER",
+            "durability": 11,
+            "modifier": 11,
+            "abilities": "WELLESTABLISHED"
+        }
+    ],
+    "Extra": [
+        {
+            "id": "COPPER",
+            "durability": 11,
+            "abilities": "WELLESTABLISHED"
+        }
+    ],
+    "Ability": [
+        {
+            "id": "WELLESTABLISHED",
+            "name": "Well-Established",
+            "description": "Nike adds elegant encrusted accents to this Air Max 270 React  ",
+            "explanation": "Nike adds elegant encrusted accents to this Air Max 270 React  "
+        },
+        {
+            "id": "MAGNETIC",
+            "name": "Magnetic",
+            "description": "Nike adds elegant encrusted accents to this Air Max 270 React  ",
+            "explanation": "Nike adds elegant encrusted accents to this Air Max 270 React  "
+        }
+    ]
+}

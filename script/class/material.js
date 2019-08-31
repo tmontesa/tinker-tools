@@ -5,13 +5,13 @@ class Material {
     //
 
     name;   
-    mod;    // Which mod the material comes from. 
-    addon;  // Which mod the matrial is implemented for TC.
-    stats;  // Stats for head, handle, and extra pieces.
+    mods = [];  // Which mod the material comes from. 
+    addon;      // Which mod the matrial is implemented for TC.
+    stats;      // Stats for head, handle, and extra pieces.
 
-    constuctor(name, mod, addon, stats) {
+    constructor(name, mods, addon, stats) {
         this.setName(name);
-        this.setMod(mod);
+        this.setMods(mods);
         this.setAddon(addon);
         this.setStats(stats);
     }
@@ -24,7 +24,7 @@ class Material {
     //
 
     get name()  { return this.name; }
-    get mod()   { return this.mod; }
+    get mods()  { return this.mods; }
     get addon() { return this.addon; }
     get stats() { return this.stats; }
 
@@ -44,13 +44,15 @@ class Material {
         this.name = name;
     }
 
-    setMod(mod) {
-        if (!(mod instanceof Mod)) {
-            console.error(`Mod for Material is invalid.`);
-            return;
+    setMods(mods) {
+        for (var i = 0; i < mods.length; i++) {
+            if (!(mods[i] instanceof Mod)) {
+                console.error(`Mod for Material is invalid.`);
+                return;
+            }
         }
-
-        this.mod = mod;
+        
+        this.mods = mods;
     }
 
     setAddon(addon) {
@@ -73,6 +75,6 @@ class Material {
 
 }
 
-function material(name, mod, addon, stats) {
-    return new Material(name, mod, addon, stats);
+function material(name, mods, addon, stats) {
+    return new Material(name, mods, addon, stats);
 }
